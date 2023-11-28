@@ -17,10 +17,8 @@ public class Window extends Application{
         FXMLLoader fxmlLoader = new FXMLLoader(Window.class.getResource("calculator-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 
-        scene.setFill(Color.TRANSPARENT);
 
         stage.setResizable(false);
-        stage.initStyle(StageStyle.TRANSPARENT);
         stage.setTitle("Scuffed Calculator");
         stage.setScene(scene);
 

@@ -2,62 +2,37 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
 <AnchorPane id="appBG" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="320.0" stylesheets="@Calculator.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.Controller">
    <children>
-      <Pane id="buttonBG" layoutY="27.0" prefHeight="551.0" prefWidth="320.0" stylesheets="@Calculator.css">
+      <Pane id="buttonBG" layoutY="13.0" prefHeight="563.0" prefWidth="320.0" stylesheets="@Calculator.css">
          <children>
             <Button layoutY="140.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="AC" />
             <Button layoutX="80.0" layoutY="140.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="+/-" />
             <Button layoutX="160.0" layoutY="140.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="\%" />
             <Button layoutX="240.0" layoutY="140.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="/" />
-            <Button layoutY="220.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="7" />
-            <Button layoutX="80.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="8" />
-            <Button layoutX="160.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="9" />
+            <Button id="7" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="7" />
+            <Button id="8" layoutX="80.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="8" />
+            <Button id="9" layoutX="160.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="9" />
             <Button layoutX="240.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="X" />
-            <Button layoutY="300.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="4" />
-            <Button layoutX="80.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="5" />
-            <Button layoutX="160.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="6" />
+            <Button id="4" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="4" />
+            <Button id="5" layoutX="80.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="5" />
+            <Button id="6" layoutX="160.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="6" />
             <Button layoutX="240.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="-" />
-            <Button layoutY="380.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="1" />
-            <Button layoutX="80.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="2" />
-            <Button layoutX="160.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="3" />
+            <Button id="1" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="1" />
+            <Button id="2" layoutX="80.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="2" />
+            <Button id="3" layoutX="160.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="3" />
             <Button layoutX="240.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="+" />
             <Button layoutY="457.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="Undo" />
-            <Button layoutX="80.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="0" />
-            <Button layoutX="160.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="." />
+            <Button id="0" layoutX="80.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="0" />
+            <Button id="." layoutX="160.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#OnNumberClicked" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="." />
             <Button layoutX="240.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#OnTestClick" prefHeight="80.0" prefWidth="80.0" stylesheets="@Calculator.css" text="=" />
          </children>
       </Pane>
       <Pane id="displayBG" layoutX="5.0" layoutY="39.0" prefHeight="105.0" prefWidth="305.0" stylesheets="@Calculator.css" />
-      <Label id="historyLabel" fx:id="historyText" layoutX="20.0" layoutY="50.0" prefHeight="30.0" prefWidth="280.0" stylesheets="@Calculator.css" text="History-Viewer" textAlignment="CENTER" />
-      <Label id="formulaLabel" fx:id="formulaText" alignment="BOTTOM_RIGHT" layoutX="10.0" layoutY="80.0" prefHeight="65.0" prefWidth="300.0" stylesheets="@Calculator.css" text="Formula-Viewer" />
-      <Pane id="titleBar" fx:id="titleBar" layoutY="-1.0" prefHeight="30.0" prefWidth="320.0" stylesheets="@Calculator.css">
-         <children>
-            <Label id="numText" layoutX="43.0" layoutY="8.0" stylesheets="@Calculator.css" text="Scuffed Calculator" />
-            <Pane id="test" layoutX="260.0" layoutY="5.0" onMouseClicked="#onMinimizedClick" prefHeight="20.0" prefWidth="20.0" stylesheets="@Calculator.css">
-               <children>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#onMinimizedClick" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../minimize-2.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-            <Pane id="test" layoutX="290.0" layoutY="5.0" prefHeight="20.0" prefWidth="20.0" stylesheets="@Calculator.css">
-               <children>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#onCloseClick" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../x.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </Pane>
-         </children>
-      </Pane>
+      <Label id="historyLabel" fx:id="historyText" layoutX="20.0" layoutY="50.0" prefHeight="30.0" prefWidth="280.0" stylesheets="@Calculator.css" text="0" textAlignment="CENTER" />
+      <Label id="formulaLabel" fx:id="formulaText" alignment="BOTTOM_RIGHT" layoutX="1.0" layoutY="80.0" prefHeight="65.0" prefWidth="300.0" stylesheets="@Calculator.css" text="0" />
    </children>
 </AnchorPane>
