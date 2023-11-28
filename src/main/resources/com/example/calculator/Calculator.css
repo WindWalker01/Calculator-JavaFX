@@ -1,0 +1,47 @@
+#titleBar {
+    /* -fx-background-color: Red; */
+    -fx-font-family: "Jetbrains Mono";
+}
+
+#test {}
+
+#appBG {
+    -fx-background-radius: 15 15 25 25;
+    -fx-background-color: #222;
+
+
+}
+
+#calButton {
+    -fx-background-color: #222;
+}
+
+#buttonBG {
+    -fx-background-color: linear-gradient(to bottom right, #265073, #2D9596);
+    -fx-background-radius: 15 15 25 25;
+}
+
+#displayBG {
+    -fx-background-color: #9AD0C2;
+    -fx-background-radius: 15 15 25 25;
+    -fx-opacity: 0.45;
+}
+
+#historyLabel {
+    -fx-alignment: Center_Right;
+    -fx-font-size: 16;
+    -fx-font-family: "Jetbrains Mono";
+    -fx-opacity: 0.8;
+}
+
+#formulaLabel {
+    -fx-alignment: Center_Right;
+    -fx-font-size: 32;
+    -fx-font-family: "Jetbrains Mono";
+
+}
+
+#numText {
+    -fx-alignment: center;
+    -fx-text-fill: white;
+}
