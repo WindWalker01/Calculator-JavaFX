@@ -22,8 +22,6 @@ public class Window extends Application{
         stage.setTitle("Scuffed Calculator");
         stage.setScene(scene);
 
-        ((Controller)fxmlLoader.getController()).Initialize(stage);
-
         stage.show();
     }
     public void run() {
