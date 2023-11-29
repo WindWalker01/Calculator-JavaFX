@@ -1,11 +1,11 @@
 titleBar {
     /* -fx-background-color: Red; */
-    -fx-font-family: "Jetbrains Mono";
+    -fx-font-family: "Cambria Math";
 }
 
 
 .equals {
-    -fx-background-color: linear-gradient(to bottom right, #67729D, #BB9CC0);
+    -fx-background-color: linear-gradient(to bottom right, #FF2E63, #08D9D6);
 }
 
 
@@ -13,6 +13,7 @@ titleBar {
     -fx-background-color: #222;
     -fx-border-color: rgba(255, 255, 255, 0.1);
     -fx-text-fill: #fff;
+    -fx-font-size: 20;
     -fx-background-radius: 5 5 5 5;
 }
 
@@ -28,7 +29,7 @@ titleBar {
 }
 
 #buttonBG {
-    -fx-background-color: linear-gradient(to bottom right, #67729D, #FED9ED);
+    -fx-background-color: linear-gradient(to bottom right, #F38181, #95E1D3);
     -fx-background-radius: 25 25 15 15;
 }
 

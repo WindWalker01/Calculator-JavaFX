@@ -16,7 +16,7 @@
             <Button id="1" layoutX="5.0" layoutY="220.0" mnemonicParsing="false" onAction="#OnNumberClicked" prefHeight="70.0" prefWidth="70.0" styleClass="FXbutton" stylesheets="@Calculator.css" text="7" />
             <Button id="8" layoutX="85.0" layoutY="220.0" mnemonicParsing="false" onAction="#OnNumberClicked" prefHeight="70.0" prefWidth="70.0" styleClass="FXbutton" stylesheets="@Calculator.css" text="8" />
             <Button id="9" layoutX="165.0" layoutY="220.0" mnemonicParsing="false" onAction="#OnNumberClicked" prefHeight="70.0" prefWidth="70.0" styleClass="FXbutton" stylesheets="@Calculator.css" text="9" />
-            <Button id="multiply" layoutX="245.0" layoutY="220.0" mnemonicParsing="false" onAction="#OnOperatorClicked" prefHeight="70.0" prefWidth="70.0" styleClass="FXbutton" stylesheets="@Calculator.css" text="X" />
+            <Button id="multiply" layoutX="245.0" layoutY="220.0" mnemonicParsing="false" onAction="#OnOperatorClicked" prefHeight="70.0" prefWidth="70.0" styleClass="FXbutton" stylesheets="@Calculator.css" text="*" />
             <Button id="4" layoutX="5.0" layoutY="300.0" mnemonicParsing="false" onAction="#OnNumberClicked" prefHeight="70.0" prefWidth="70.0" styleClass="FXbutton" stylesheets="@Calculator.css" text="4" />
             <Button id="5" layoutX="85.0" layoutY="300.0" mnemonicParsing="false" onAction="#OnNumberClicked" prefHeight="70.0" prefWidth="70.0" styleClass="FXbutton" stylesheets="@Calculator.css" text="5" />
             <Button id="6" layoutX="165.0" layoutY="300.0" mnemonicParsing="false" onAction="#OnNumberClicked" prefHeight="70.0" prefWidth="70.0" styleClass="FXbutton" stylesheets="@Calculator.css" text="6" />
