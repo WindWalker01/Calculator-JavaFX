@@ -1,9 +1,20 @@
-#titleBar {
+titleBar {
     /* -fx-background-color: Red; */
     -fx-font-family: "Jetbrains Mono";
 }
 
-#test {}
+
+.equals {
+    -fx-background-color: linear-gradient(to bottom right, #67729D, #BB9CC0);
+}
+
+
+.FXbutton {
+    -fx-background-color: #222;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: #fff;
+    -fx-background-radius: 5 5 5 5;
+}
 
 #appBG {
     /* -fx-background-radius: 15 15 25 25; */
@@ -17,8 +28,8 @@
 }
 
 #buttonBG {
-    -fx-background-color: linear-gradient(to bottom right, #265073, #2D9596);
-    -fx-background-radius: 15 15 25 25;
+    -fx-background-color: linear-gradient(to bottom right, #67729D, #FED9ED);
+    -fx-background-radius: 25 25 15 15;
 }
 
 #displayBG {
